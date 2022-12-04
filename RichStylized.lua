@@ -199,11 +199,11 @@ return function(...)
 		if autoEscapeChars and strData.process then
 			local finalString = strData.str
 			
+			finalString = string.gsub(finalString, "&", "&amp;")
 			finalString = string.gsub(finalString, "<", "&lt;")
 			finalString = string.gsub(finalString, ">", "&gt;")
 			finalString = string.gsub(finalString, "\"", "&quot;")
 			finalString = string.gsub(finalString, "'", "&apos;")
-			finalString = string.gsub(finalString, "&", "&amp;")
 			finalString = string.gsub(finalString, "\n", "<br />")
 			
 			output = output .. finalString
