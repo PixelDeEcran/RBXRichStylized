@@ -1,3 +1,7 @@
+--[[
+	author: PixelDeEcran (https://github.com/PixelDeEcran)
+]]
+
 return function(...)
 	local strings = {}
 	
